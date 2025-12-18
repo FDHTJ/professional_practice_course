@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/bubble"
+    android:minHeight="300dp"
+    android:padding="24dp">
+
+    <!-- 标题栏 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AI小助手总结"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- 状态一：加载中 -->
+    <LinearLayout
+        android:id="@+id/helper_loading"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="visible"> <!-- 默认显示 -->
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminateTint="@color/purple_500"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="正在加载数据..."
+            android:textColor="#888888" />
+    </LinearLayout>
+
+    <!-- 状态二：加载完成的内容 -->
+    <!-- 使用 NestedScrollView 以防内容太长无法滚动 -->
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/helper_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"> <!-- 默认隐藏 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/helper_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="4dp"
+                android:text="这里是加载完成后的详细内容。\n\n你可以放很长的文字，图片，或者任何其他控件。\n\nBottomSheet 会自动处理高度适应。"
+                android:textSize="16sp"
+                android:textColor="#333333" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

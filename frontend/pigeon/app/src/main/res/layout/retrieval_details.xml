@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".retrieval.RetrievalDetails"
+    android:id="@+id/retrieval_details"
+    android:background="@drawable/background"
+    android:fillViewport="true">
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:fillViewport="true">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- 顶部大图 -->
+
+
+    <ImageView
+        android:id="@+id/detail_image"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:adjustViewBounds="true"
+        android:background="#DDDDDD"
+        android:scaleType="fitCenter"
+        android:src="@drawable/no_image" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#CCCCCC"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp" />
+    <!-- 基础信息区域 -->
+
+    <LinearLayout
+        android:background="@color/purple_500"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="12dp">
+
+        <!-- 名字 + ID -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:textColor="@color/black"
+
+                android:id="@+id/detail_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="名字：xxx"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:textColor="@color/black"
+
+                android:id="@+id/detail_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ID：12345"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <!-- 省份 + 城市 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="8dp"
+           >
+
+            <TextView
+                android:textColor="@color/black"
+
+                android:id="@+id/detail_province"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="省份：广东"
+                android:textSize="16sp" />
+
+            <TextView
+                android:textColor="@color/black"
+
+                android:id="@+id/detail_city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="城市：广州"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- 分割线 -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#CCCCCC"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp" />
+
+    <!-- 详细介绍 -->
+    <TextView
+        android:textColor="@color/black"
+
+        android:id="@+id/detail_intro_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="详细介绍"
+        android:background="@color/purple_500"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/detail_intro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purple_500"
+        android:textColor="@color/black"
+        android:text="这里是鸽子的详细介绍……内容可能很长，可以一直往下滑。"
+        android:textSize="16sp"
+        android:paddingTop="8dp" />
+
+
+
+</LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
+
+
+<com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/detail_helper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:backgroundTint="@color/purple_500"
+        app:borderWidth="0dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="180dp"
+
+        app:elevation="1dp"
+        app:fabCustomSize="60dp"
+        app:maxImageSize="60dp"
+        app:pressedTranslationZ="0dp"
+        app:srcCompat="@drawable/helper" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

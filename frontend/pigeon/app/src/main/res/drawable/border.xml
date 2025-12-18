@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 1. 填充颜色：透明 (这样才能看到中间的图片) -->
+    <solid android:color="@color/purple_500" />
+
+    <!-- 2. 边框 (Stroke) -->
+    <stroke
+        android:width="4dp"
+        android:color="@color/purple_700" />    <!-- 红色边框，你可以改成白色 #FFFFFF -->
+
+    <!-- 3. 圆角 (可选，如果不需要圆角就把这行删掉) -->
+    <corners android:radius="10dp" />
+</shape>
