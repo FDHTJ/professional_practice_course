@@ -13,7 +13,7 @@ class StreamPrintHandler(BaseCallbackHandler):
         print(token, end="", flush=True)
 # ================= 配置区域 =================
 # 替换你的 Key
-os.environ["OPENAI_API_KEY"] = "495336b5c3a44a85b7b97b64da809573.Hbr3XNqsR3KKNxWO"
+os.environ["OPENAI_API_KEY"] = "your access key"
 os.environ["OPENAI_API_BASE"] = "https://open.bigmodel.cn/api/paas/v4/"
 
 DB_PATH = "./database_faiss_pytorch_base"
