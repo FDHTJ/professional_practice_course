@@ -1,5 +1,5 @@
 This repository contains code for the Professional Practice course in the Fall Semester 2025, including Pigeon IRIR comparison and retrieval, as well as an AI assistant for PyTorch.
 
-Some trained model and data files are too large to upload, you can get access in https://pan.quark.cn/s/5b395b424cc0?pwd=hbML.
+Some trained model and data files are too large to upload, you can get access in [Models and Raw data](https://pan.quark.cn/s/5b395b424cc0?pwd=hbML).
 
 For more details of our implement and results, please refer to [Report](report.pdf).
