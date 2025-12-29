@@ -8,8 +8,8 @@ import tqdm
 
 def get_image_and_labels(data:list,tag="train"):
     image_path="images/"
-    image_target=f"../../yolov8n/images/{tag}/"
-    label_target=f"../../yolov8n/labels/{tag}/"
+    image_target=f"../../yolov/images/{tag}/"
+    label_target=f"../../yolov/labels/{tag}/"
     # 确保目标文件夹存在
     os.makedirs(image_target, exist_ok=True)
     os.makedirs(label_target, exist_ok=True)
