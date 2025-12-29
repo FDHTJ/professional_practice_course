@@ -13,7 +13,7 @@ from tqdm import tqdm
 
 
 # ==============================================================================
-# 步骤 1: 创建自定义的 Dataset 类来加载您的数据
+# 步骤 1: 创建自定义的 Dataset 类来加载数据
 # ==============================================================================
 class SiameseIrisDataset(Dataset):
     """
@@ -195,3 +195,4 @@ if __name__ == '__main__':
     numpy.savez_compressed("test_result.npz", pos_d=pos_d, neg_d=neg_d)
     print("正样本平均距离:", sum(pos_d) / len(pos_d))
     print("负样本平均距离:", sum(neg_d) / len(neg_d))
+
