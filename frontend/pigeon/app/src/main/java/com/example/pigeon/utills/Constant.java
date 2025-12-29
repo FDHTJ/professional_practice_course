@@ -9,7 +9,7 @@ public class Constant {
     static public   String SERVER_SUCCESS="success";
     static public   String SERVER_FAILED="fail";
     static public   String REQUEST_URL="http://10.19.34.196:8000";
-    static public   String MODEL_API_KEY="495336b5c3a44a85b7b97b64da809573.Hbr3XNqsR3KKNxWO";
+    static public   String MODEL_API_KEY="your access key";
 
 
 }
